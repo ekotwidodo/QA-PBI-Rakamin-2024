@@ -1,0 +1,308 @@
+{
+  "root_group": {
+    "groups": [
+      {
+        "groups": [],
+        "checks": [
+            {
+              "name": "response status code should be 201 (CREATED)",
+              "path": "::01. Regres.in API Create::response status code should be 201 (CREATED)",
+              "id": "c9eb7ba1c6a57195fa74c1a314bb1436",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body should not be empty",
+              "path": "::01. Regres.in API Create::response body should not be empty",
+              "id": "e1b47800fee64a4bccaee2537f878a51"
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body should contain keys: id, name, job, and createdAt",
+              "path": "::01. Regres.in API Create::response body should contain keys: id, name, job, and createdAt",
+              "id": "b295e6bce11e3aa5515a932497e71817"
+            },
+            {
+              "name": "name value in response should be equal to name value in request",
+              "path": "::01. Regres.in API Create::name value in response should be equal to name value in request",
+              "id": "fdb5af3bfec2b08296bd3943e0609fa0",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "id": "572a0c50dd69eae36bebdab1bf1b476d",
+              "passes": 3500,
+              "fails": 0,
+              "name": "job value in response should be equal to job value in request",
+              "path": "::01. Regres.in API Create::job value in response should be equal to job value in request"
+            }
+          ],
+        "name": "01. Regres.in API Create",
+        "path": "::01. Regres.in API Create",
+        "id": "3a288906974b2bac4943773b527abe70"
+      },
+      {
+        "path": "::2. Regres.in API Update",
+        "id": "d519ce3fa05fa49971cb226413954b5c",
+        "groups": [],
+        "checks": [
+            {
+              "path": "::2. Regres.in API Update::response status code should be 200 (OK)",
+              "id": "aae2a90bc036b6303d82a74684dfb489",
+              "passes": 3500,
+              "fails": 0,
+              "name": "response status code should be 200 (OK)"
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "response body should not be empty",
+              "path": "::2. Regres.in API Update::response body should not be empty",
+              "id": "8d73332b22f5fba3a288739de2e30704"
+            },
+            {
+              "name": "response body should contain keys: name, job, and updatedAt",
+              "path": "::2. Regres.in API Update::response body should contain keys: name, job, and updatedAt",
+              "id": "25cd936b2131f3f178eb4d3d3fffbf34",
+              "passes": 3500,
+              "fails": 0
+            },
+            {
+              "passes": 3500,
+              "fails": 0,
+              "name": "name value in response should be equal to name value in request",
+              "path": "::2. Regres.in API Update::name value in response should be equal to name value in request",
+              "id": "1a22f4fe4ce050cf1055d834059bbbad"
+            },
+            {
+              "name": "job value in response should be equal to job value in request",
+              "path": "::2. Regres.in API Update::job value in response should be equal to job value in request",
+              "id": "f8c35a7695de9d8aa498417172300a87",
+              "passes": 3500,
+              "fails": 0
+            }
+          ],
+        "name": "2. Regres.in API Update"
+      }
+    ],
+    "checks": [],
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 47164.3434
+  },
+  "metrics": {
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 0.5155,
+        "p(95)": 0.5646199999999997,
+        "avg": 0.1250931,
+        "min": 0,
+        "med": 0,
+        "max": 17.0498
+      }
+    },
+    "http_req_blocked": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 0,
+        "max": 13236.5646,
+        "p(90)": 1945.2042700000002,
+        "p(95)": 3839.158224999999,
+        "avg": 435.63744811428637
+      }
+    },
+    "http_reqs": {
+      "contains": "default",
+      "values": {
+        "count": 7000,
+        "rate": 148.41720451047348
+      },
+      "type": "counter"
+    },
+    "iterations": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 3500,
+        "rate": 74.20860225523674
+      }
+    },
+    "checks": {
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 35000,
+        "fails": 0
+      },
+      "type": "rate"
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 1.3524052142857155,
+        "min": 0,
+        "med": 0.1143,
+        "max": 643.1404,
+        "p(90)": 3.9821,
+        "p(95)": 5.8345949999999815
+      }
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 0,
+        "fails": 7000,
+        "rate": 0
+      }
+    },
+    "iteration_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 8887.2878,
+        "max": 25912.9845,
+        "p(90)": 13564.88097,
+        "p(95)": 14708.741089999992,
+        "avg": 9924.749698514312,
+        "min": 7470.8804
+      }
+    },
+    "data_sent": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 1302715,
+        "rate": 27620.759796265924
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 1000,
+        "min": 1000,
+        "max": 1000
+      }
+    },
+    "group_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 4962.32361449999,
+        "min": 3693.2159,
+        "med": 4085.25465,
+        "max": 21746.4407,
+        "p(90)": 7759.500030000002,
+        "p(95)": 9199.474219999991
+      }
+    },
+    "http_req_duration": {
+      "contains": "time",
+      "values": {
+        "avg": 1521.5732111857153,
+        "min": 692.1214,
+        "med": 1064.81565,
+        "max": 15137.2386,
+        "p(90)": 2909.52946,
+        "p(95)": 3447.982794999996
+      },
+      "thresholds": {
+        "p(95)<2000": {
+          "ok": false
+        }
+      },
+      "type": "trend"
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "med": 1064.81565,
+        "max": 15137.2386,
+        "p(90)": 2909.52946,
+        "p(95)": 3447.982794999996,
+        "avg": 1521.5732111857153,
+        "min": 692.1214
+      }
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "max": 15133.9018,
+        "p(90)": 2905.382910000001,
+        "p(95)": 3446.761754999995,
+        "avg": 1520.0957128714304,
+        "min": 692.1214,
+        "med": 1064.7401
+      }
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 0,
+        "max": 3448.1857,
+        "p(90)": 406.466,
+        "p(95)": 556.5677,
+        "avg": 71.56651977142876
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 2,
+        "min": 2,
+        "max": 1000
+      }
+    },
+    "data_received": {
+      "type": "counter",
+      "contains": "data",
+      "values": {
+        "count": 9146788,
+        "rate": 193934.38645856353
+      }
+    },
+    "http_req_tls_handshaking": {
+      "contains": "time",
+      "values": {
+        "p(95)": 3315.819939999989,
+        "avg": 353.9973979285714,
+        "min": 0,
+        "med": 0,
+        "max": 12584.1704,
+        "p(90)": 1399.4502000000002
+      },
+      "type": "trend"
+    }
+  }
+}

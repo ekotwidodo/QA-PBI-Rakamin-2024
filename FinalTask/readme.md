@@ -38,3 +38,6 @@ The result for this test can be found in this repository (`performance_test_resu
 ![K6-Report 1](./images/report-1.png)
 ![K6-Report 2](./images/report-2.png)
 ![K6-Report 3](./images/report-3.png)
+![K6-Report 4](./images/report-4.png)
+![K6-Report 5](./images/report-5.png)
+![K6-Report 6](./images/report-6.png)
